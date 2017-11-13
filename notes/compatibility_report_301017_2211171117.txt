@@ -1,0 +1,37 @@
+Converting GML script: ${project_dir}\scripts\menu_exit_game\menu_exit_game.gml
+Converted description /// @description menu_exit_game()/// @function menu_exit_game
+
+Converting GML script: ${project_dir}\scripts\_a\_a.gml
+Converted description /// @description _a(*args)/// @function _a
+/// @param *args
+
+Converting GML script: ${project_dir}\scripts\menu_start_game\menu_start_game.gml
+Converted description /// @description menu_start_game()/// @function menu_start_game
+
+Converting GML script: ${project_dir}\scripts\wrap\wrap.gml
+Converted description /// @description wrap(value, min, max)/// @function wrap
+/// @param value
+/// @param  min
+/// @param  max
+
+Converting GML script: ${project_dir}\objects\obj_controller\Create_0.gml
+Converted description /// @description initialize game
+
+Converting GML script: ${project_dir}\objects\obj_controller\Step_1.gml
+Converted description /// @description handle delta timing
+
+Converting GML script: ${project_dir}\objects\obj_gController\Create_0.gml
+Converted description /// @description Pause stuff
+
+Converting GML script: ${project_dir}\objects\obj_menu\Create_0.gml
+Converted description /// @description Initialize Main Menu
+
+Converting GML script: ${project_dir}\objects\obj_menu\Step_0.gml
+Converted description /// @description Handle menu stuff
+
+Converting GML script: ${project_dir}\objects\obj_menu\Draw_0.gml
+Converted description /// @description Draw menus
+
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Font f_menus has been converted to font family Comic Sans MS (Bold Italic) - Font has been regenerated, small inconsistencies may occur
+Game speed set to 9999
