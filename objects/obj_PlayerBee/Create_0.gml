@@ -24,6 +24,7 @@ bammo = ds_list_create();
 repeat(15){
 	ds_list_add(bammo, instance_create_layer(x,y, "Main", obj_drone));
 }
+timer = 0;
 
 //image tracking
 spr_index = 0;

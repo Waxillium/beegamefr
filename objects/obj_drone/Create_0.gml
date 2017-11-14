@@ -1,3 +1,3 @@
 /// @description initialize drones
 event_inherited();
-spd = 8;
+spd = 7;
