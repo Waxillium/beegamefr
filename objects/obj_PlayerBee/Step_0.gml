@@ -25,7 +25,7 @@ if(state!=stop){
 //var targetAngle = point_direction(x, y, mouse_x, mouse_y);
 var bullet;
 for(var i=0; i<ds_list_size(bammo); i++){
-	var closest = 0;
+//	var closest = 0;
 	var angle = i/ds_list_size(bammo) * 360 + current_time/10;
 	if(angle>360){angle-=360;} else if(angle<0){angle+=360;}
 //	if(angle==targetAngle){var closest = angle, bullet = bammo[|i];}
@@ -38,7 +38,9 @@ if(shoot && timer <= 0){
 	bullet = bammo[|irandom_range(0, ds_list_size(bammo))];
 	bullet.targetx = mouse_x;
 	bullet.targety = mouse_y;
+	ds_list_add(spent, bullet);
 	ds_list_delete(bammo, ds_list_find_index(bammo, bullet));
 	timer = 6;
 }
+
 timer -= global.dt;
