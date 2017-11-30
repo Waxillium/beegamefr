@@ -4,6 +4,7 @@ state = player_movement;
 //get input
 sto = keyboard_check_pressed(vk_tab);
 shoot = mouse_check_button(mb_left);
+collect = keyboard_check_pressed(vk_space);
 
 //toggle player movement with "sto" button
 if(sto){
@@ -42,5 +43,11 @@ if(shoot && timer <= 0){
 	ds_list_delete(bammo, ds_list_find_index(bammo, bullet));
 	timer = 6;
 }
-
 timer -= global.dt;
+//collect the bees that were shot
+if(collect){
+	for(var j = 0; j<ds_list_size(spent); j++){
+	ds_list_add(bammo, spent[|j]);
+	}
+	ds_list_clear(spent);
+}
