@@ -1,4 +1,5 @@
 /// intiialize variables
+event_inherited()
 //movement properties
 spd = 3;
 turnspeed = 1/2;

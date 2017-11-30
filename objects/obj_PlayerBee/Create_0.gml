@@ -1,4 +1,5 @@
 /// initialize player variables
+event_inherited()
 //movement properties
 spd = 7;
 turnspeed = .9;
@@ -33,3 +34,7 @@ cbox = 100;
 
 //image tracking
 spr_index = 0;
+
+//display variables
+bp = ds_list_size(bammo);
+bs = ds_list_size(spent);

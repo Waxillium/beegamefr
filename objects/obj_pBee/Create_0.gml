@@ -1,4 +1,5 @@
 /// @description initialize parent variables
+event_inherited()
 // this is the parent object for all bees that move
 
 //movement properties
