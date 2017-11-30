@@ -4,7 +4,7 @@ state = player_movement;
 //get input
 sto = keyboard_check_pressed(vk_tab);
 shoot = mouse_check_button(mb_left);
-collect = keyboard_check_pressed(vk_space);
+collect = keyboard_check(vk_space);
 
 //toggle player movement with "sto" button
 if(sto){
@@ -23,31 +23,36 @@ if(state!=stop){
 }
 
 //rotate bees around queen and choose ammo
-//var targetAngle = point_direction(x, y, mouse_x, mouse_y);
 var bullet;
 for(var i=0; i<ds_list_size(bammo); i++){
-//	var closest = 0;
 	var angle = i/ds_list_size(bammo) * 360 + current_time/10;
 	if(angle>360){angle-=360;} else if(angle<0){angle+=360;}
-//	if(angle==targetAngle){var closest = angle, bullet = bammo[|i];}
-//	else if (closest = (abs(angle-targetAngle) < abs(closest-targetAngle))){bullet = bammo[|i];}
 	bammo[|i].targetx = x + lengthdir_x(bdist, angle);
 	bammo[|i].targety = y + lengthdir_y(bdist, angle);
 }
+
+var j = 0;
 //choose a bee and shoot it
-if(shoot && timer <= 0){
-	bullet = bammo[|irandom_range(0, ds_list_size(bammo))];
+
+if(shoot && timer <= 0 && !(ds_list_empty(bammo))){
+	timer = 7;
+	bullet = bammo[|irandom_range(0, ds_list_size(bammo)-1)];
 	bullet.targetx = mouse_x;
 	bullet.targety = mouse_y;
 	ds_list_add(spent, bullet);
 	ds_list_delete(bammo, ds_list_find_index(bammo, bullet));
-	timer = 6;
 }
 timer -= global.dt;
-//collect the bees that were shot
-if(collect){
-	for(var j = 0; j<ds_list_size(spent); j++){
-	ds_list_add(bammo, spent[|j]);
+
+//collect bees
+if(collect && !(ds_list_empty(spent))){
+	for(j = ds_list_size(spent)-1; j>=0; j--){
+		if(point_distance(x, y, spent[|j].x, spent[|j].y)<cbox){
+			ds_list_add(bammo, spent[|j]);
+			ds_list_delete(spent, ds_list_find_index(spent, spent[|j]));
+		}
 	}
-	ds_list_clear(spent);
 }
+
+bp = ds_list_size(bammo);
+bs = ds_list_size(spent);
