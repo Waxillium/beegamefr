@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "5cbc2c51-c2fe-4e42-9553-78411e6d9baa",
+            "Value": {
+                "id": "88426237-8522-4fd6-b8ea-65efd4b844d9",
+                "resourcePath": "sprites\\spr_flower\\spr_flower.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5d4fe112-c032-4de6-94d5-0205735dea31",
             "Value": {
                 "id": "94b9c424-77c4-4138-8665-3b7754b88127",

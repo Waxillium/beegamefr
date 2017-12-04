@@ -21,7 +21,7 @@ dir = 0;
 //initialize drone bees
 bdist = 40;
 bammo = ds_list_create();
-maxbees = 15;
+maxbees = 30;
 repeat(maxbees){
 	ds_list_add(bammo, instance_create_layer(x,y, "Main", obj_drone));
 }
@@ -29,7 +29,7 @@ spent = ds_list_create();
 timer = 0;
 
 //drone bee modifiers
-cbox = 100;
+cbox = 150;
 
 //image tracking
 spr_index = 0;

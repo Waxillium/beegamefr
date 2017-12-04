@@ -5,6 +5,7 @@ sprite_index = spr_PlayerBee;
 image_index = spr_index;
 draw_self();
 
+/*
 var c = draw_get_color();
 
 draw_set_font(f_menus);
@@ -18,3 +19,4 @@ if(ds_list_empty(spent)){
 }
 
 draw_set_color(c)
+*/
