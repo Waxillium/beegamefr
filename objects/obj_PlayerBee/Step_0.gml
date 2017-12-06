@@ -54,5 +54,12 @@ if(collect && !(ds_list_empty(spent))){
 	}
 }
 
-bp = ds_list_size(bammo);
-bs = ds_list_size(spent);
+//make drones wander towards flowers
+for(var z = 0; z<ds_list_size(spent); z++){
+	var cBee = spent[|z];
+	var flow = instance_nearest(cBee.x, cBee.y, obj_flower);
+	if(point_distance(cBee.x, cBee.y, flow.x, flow.y)<25){
+		cBee.targetx = flow.x;
+		cBee.targety = flow.y;
+	}
+}
