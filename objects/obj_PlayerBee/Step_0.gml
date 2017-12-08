@@ -31,9 +31,7 @@ for(var i=0; i<ds_list_size(bammo); i++){
 	bammo[|i].targety = y + lengthdir_y(bdist, angle);
 }
 
-var j = 0;
 //choose a bee and shoot it
-
 if(shoot && timer <= 0 && !(ds_list_empty(bammo))){
 	timer = 7;
 	bullet = bammo[|irandom_range(0, ds_list_size(bammo)-1)];
@@ -45,6 +43,7 @@ if(shoot && timer <= 0 && !(ds_list_empty(bammo))){
 timer -= global.dt;
 
 //collect bees
+var j = 0;
 if(collect && !(ds_list_empty(spent))){
 	for(j = ds_list_size(spent)-1; j>=0; j--){
 		if(point_distance(x, y, spent[|j].x, spent[|j].y)<cbox){
@@ -58,7 +57,7 @@ if(collect && !(ds_list_empty(spent))){
 for(var z = 0; z<ds_list_size(spent); z++){
 	var cBee = spent[|z];
 	var flow = instance_nearest(cBee.x, cBee.y, obj_flower);
-	if(point_distance(cBee.x, cBee.y, flow.x, flow.y)<25){
+	if(point_distance(cBee.x, cBee.y, flow.x, flow.y)<40){
 		cBee.targetx = flow.x;
 		cBee.targety = flow.y;
 	}
