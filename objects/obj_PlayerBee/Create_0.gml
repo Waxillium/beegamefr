@@ -1,6 +1,6 @@
 /// initialize player variables
 //movement properties
-spd = 7;
+spd = 15;
 turnspeed = .9;
 facingDir = 0;
 targetDir = 0;
@@ -19,7 +19,7 @@ atk = 1;
 dir = 0;
 
 //initialize drone bees
-bdist = 40;
+bdist = 150;
 bammo = ds_list_create();
 maxbees = 30;
 repeat(maxbees){

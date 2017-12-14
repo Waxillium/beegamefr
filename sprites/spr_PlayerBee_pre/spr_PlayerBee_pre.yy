@@ -2,7 +2,7 @@
     "id": "7d5c074b-8f95-42ac-a47a-3a9ed54ddaca",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_drone",
+    "name": "spr_PlayerBee_pre",
     "For3D": false,
     "HTile": false,
     "VTile": false,

@@ -1,4 +1,5 @@
 /// @description initialize drones
 event_inherited();
-spd = 7;
+spr_ind = 0;
+spd = 15;
 depth = -100;

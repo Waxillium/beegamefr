@@ -274,7 +274,7 @@
             "Key": "76c7bbfc-c342-4ca0-985f-026d3a8275ce",
             "Value": {
                 "id": "9f047873-619e-4e52-a4b2-cd151c45f30a",
-                "resourcePath": "sprites\\spr_drone\\spr_drone.yy",
+                "resourcePath": "sprites\\spr_null\\spr_null.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -290,7 +290,7 @@
             "Key": "7d5c074b-8f95-42ac-a47a-3a9ed54ddaca",
             "Value": {
                 "id": "94bea4d8-1000-4526-8900-0e923309c5c6",
-                "resourcePath": "sprites\\spr_PlayerBee\\spr_PlayerBee.yy",
+                "resourcePath": "sprites\\spr_drone\\spr_drone.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -434,7 +434,7 @@
             "Key": "c8d42385-604c-44c7-9769-7f216a3f28ab",
             "Value": {
                 "id": "d6eef62d-5b7a-43d6-87d3-179aa564c6ac",
-                "resourcePath": "sprites\\spr_PlayerBee1\\spr_PlayerBee1.yy",
+                "resourcePath": "sprites\\spr_PlayerBee\\spr_PlayerBee.yy",
                 "resourceType": "GMSprite"
             }
         },
