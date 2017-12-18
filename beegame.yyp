@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "80f8db16-d5a2-495f-b770-c4f20d182656",
+            "Value": {
+                "id": "9e510640-f727-40da-a53a-a2b017b1ba2e",
+                "resourcePath": "sprites\\sprite10\\sprite10.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89e6516d-71b6-446d-9ba8-a075cbe37a80",
             "Value": {
                 "id": "224b3ec5-2c40-4b34-8690-eecfa00a82ff",
@@ -484,6 +492,14 @@
                 "id": "52d5acba-a5f9-4e3d-9474-fb91066fb199",
                 "resourcePath": "scripts\\menu_start_game\\menu_start_game.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e6a4a99c-0d1f-4693-97a6-82f7024e7d31",
+            "Value": {
+                "id": "0f75ff7e-7ef3-4910-9c7d-164e0e3425a4",
+                "resourcePath": "sprites\\sprite9\\sprite9.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,9 +1,12 @@
 /// initialize player variables
 //movement properties
-spd = 15;
+spd = 9;
 turnspeed = .9;
 facingDir = 0;
 targetDir = 0;
+xscale = .35;
+image_xscale = .35;
+image_yscale = .35;
 
 //movement trackers
 vspd = 0;
