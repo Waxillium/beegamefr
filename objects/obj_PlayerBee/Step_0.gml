@@ -54,6 +54,7 @@ if(collect && !(ds_list_empty(spent))){
 }
 
 //make drones wander towards flowers
+/*
 for(var z = 0; z<ds_list_size(spent); z++){
 	var cBee = spent[|z];
 	var flow = instance_nearest(cBee.x, cBee.y, obj_flower);
@@ -61,4 +62,4 @@ for(var z = 0; z<ds_list_size(spent); z++){
 		cBee.targetx = flow.x;
 		cBee.targety = flow.y;
 	}
-}
+}*/

@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "7af6cac8-c31c-4b76-a34c-cbd266f8bba9",
+            "Value": {
+                "id": "29c7957c-209b-4ffa-aec7-e7343508e384",
+                "resourcePath": "sprites\\spr_grass\\spr_grass.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7d5c074b-8f95-42ac-a47a-3a9ed54ddaca",
             "Value": {
                 "id": "94bea4d8-1000-4526-8900-0e923309c5c6",
@@ -306,7 +314,7 @@
             "Key": "80f8db16-d5a2-495f-b770-c4f20d182656",
             "Value": {
                 "id": "9e510640-f727-40da-a53a-a2b017b1ba2e",
-                "resourcePath": "sprites\\sprite10\\sprite10.yy",
+                "resourcePath": "sprites\\spr_dirt\\spr_dirt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -492,14 +500,6 @@
                 "id": "52d5acba-a5f9-4e3d-9474-fb91066fb199",
                 "resourcePath": "scripts\\menu_start_game\\menu_start_game.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e6a4a99c-0d1f-4693-97a6-82f7024e7d31",
-            "Value": {
-                "id": "0f75ff7e-7ef3-4910-9c7d-164e0e3425a4",
-                "resourcePath": "sprites\\sprite9\\sprite9.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
